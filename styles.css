@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Rubik";
+    font-weight: 600;
+    background-color: #EEF0F4;
+    text-align: center;
+    user-select: none;/*We can't select anything, which is usually not preferred*/
+}
+#overall-container{
+    max-width: 320px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+#main-logo {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 10px solid #EEF0F4;
+    box-shadow: 0 0 20px black;
+    justify-content: center;
+}
+#input-text {
+    text-align: center;
+    background-color: gainsboro;
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 550;
+    box-shadow: 0 0 10px black;
+    outline-width: 0; 
+    font: size 25px;
+    user-select: none; /*Need to be used wisely*/
+}
+#cart-button {
+    background-color: #3a2f98;
+    color: #FDFDFD;
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+#cart-button:hover {
+    background-color: red;
+    transform: scale(1.25) perspective(1px)
+}
+::placeholder {
+    color: rgb(36, 38, 36);
+    opacity: 0.5; 
+}
+#shopping-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    background-color: #fcf129;
+    box-shadow: 0px 0px 6px black;
+    object-fit: cover;
+    padding: 8px 16px;
+    border-radius: 8px;
+    flex-grow: 1; /*For perfect fitting or stretching property*/
+}
+ul li:hover {
+    cursor: cell;
+    background-color: red;
+    color: #fff;
+}
+/*By default input Text have
+  border: 1.6px
+  padding: 1px 2px 
+  ul li means the li tag with ul needs to be designed by these contraints*/
